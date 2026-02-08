@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aura AI - Automation for Everyone
 
-## Getting Started
+A premium, modern, and high-performance landing page built with **Next.js 15**, **Tailwind CSS v4**, and **GSAP**. This project showcases a sophisticated AI SaaS aesthetic with smooth animations, unique UI/UX patterns, and a responsive design.
 
-First, run the development server:
+## ✨ Key Features
+
+- **🚀 GSAP Animations**: Custom ScrollTriggered entrance animations and continuous floating sequences.
+- **🖼️ Premium Asset Integration**: Custom-curated photography and SVG illustrations for a high-end look.
+- **🔄 Infinite Carousels**: Bi-directional, seamless looping social proof and testimonial sections.
+- **🎨 Unique Design System**:
+  - **Ghost Numbering**: Stylized background numbers in feature cards.
+  - **Glassmorphism**: Elegant blur effects and ambient background orbs.
+  - **Premium Typography**: Instrument Sans & Instrument Serif pairing.
+- **📱 Fully Responsive**: Optimized for all devices from mobile to large-scale desktops.
+
+## 🛠️ Technology Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://gsap.com/) (GreenSock Animation Platform)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: [Google Fonts](https://fonts.google.com/) (Instrument Sans & Serif)
+
+## 📂 Project Structure
+
+```text
+├── app/
+│   ├── globals.css      # Custom Tailwind v4 theme & utility classes
+│   ├── layout.tsx       # Root layout with font configuration
+│   └── page.tsx         # Main landing page assembly
+├── components/
+│   └── sections/
+│       ├── Navbar.tsx      # Fixed glassmorphic navigation
+│       ├── Hero.tsx        # High-impact animated splash section
+│       ├── FeatureCards.tsx# Unique cards with ghost numbers & hover effects
+│       ├── SocialProof.tsx # Dual-direction infinite carousels
+│       ├── FeatureDetails.tsx# Deep-dive content blocks with parallax
+│       ├── CTA.tsx         # Performance-focused call-to-action
+│       └── Footer.tsx      # Comprehensive site map and links
+└── public/               # Optimized images and SVGs
+```
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+```bash
+npm install
+```
+
+### 2. Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📐 Design Details
 
-## Learn More
+### Feature Cards UI/UX
+The `FeatureCards` component uses a unique combination of semi-transparent ghost numbers (`01, 02, 03`) and dynamic "glow blobs" that react to user hover. This creates a tactile, premium feel that encourages interaction.
 
-To learn more about Next.js, take a look at the following resources:
+### Social Proof Carousel
+Utilizes GSAP to create a non-clipping, infinite loop. The partner logos move in the opposite direction of the testimonials to create a subtle parallax depth effect as the user scrolls.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Typography & Colors
+- **Headline Font**: `Instrument Serif` (Italicized for emphasis)
+- **Body Font**: `Instrument Sans`
+- **Primary Accent**: `#D4FF80` (High-visibility Lime)
+- **Background**: `#FCFCF9` (Soft Cream White)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ for a modern AI future.
