@@ -71,6 +71,7 @@ const FeatureDetail = ({ label, title, points, color, imageUrl, reverse }: Featu
             src={imageUrl}
             alt={title}
             fill
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 720px, 1200px"
             className="object-cover group-hover:scale-105 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

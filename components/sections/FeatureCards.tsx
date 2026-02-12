@@ -106,6 +106,7 @@ export const FeatureCards = () => {
                     src={feature.image} 
                     alt={feature.title} 
                     fill
+                    sizes="(max-width: 767px) 128px, (max-width: 1023px) 176px, 192px"
                     className="object-contain drop-shadow-2xl translate-y-2 group-hover:translate-y-0 group-hover:scale-110 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]"
                   />
                 </div>

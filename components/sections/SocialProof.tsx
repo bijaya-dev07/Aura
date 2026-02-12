@@ -102,7 +102,8 @@ export const SocialProof = () => {
                  <Image
                     src={t.image}
                     alt={t.name}
-                    fill
+                  fill
+                  sizes="48px"
                     className="object-cover"
                  />
               </div>
