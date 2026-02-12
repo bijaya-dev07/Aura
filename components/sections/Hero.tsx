@@ -39,17 +39,17 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative pt-48 pb-32 px-8 flex flex-col items-center text-center overflow-hidden">
+    <section ref={heroRef} className="relative pt-36 md:pt-48 pb-20 md:pb-32 px-6 md:px-8 flex flex-col items-center text-center overflow-hidden">
       {/* Decorative Orb */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-gradient-to-b from-orange-200/50 via-pink-100/30 to-transparent blur-[120px] -z-10 animate-pulse" />
       
       <div className="max-w-4xl mx-auto">
-        <h1 ref={headlineRef} className="text-6xl md:text-8xl font-normal tracking-tight mb-8">
+        <h1 ref={headlineRef} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-normal tracking-tight mb-6 md:mb-8 leading-tight">
           AI automation <br /> 
           for <span className="font-serif italic">everyone.</span>
         </h1>
         
-        <p ref={subheadlineRef} className="text-xl md:text-2xl text-black/60 mb-12 max-w-2xl mx-auto font-medium">
+        <p ref={subheadlineRef} className="text-base sm:text-lg md:text-2xl text-black/60 mb-8 md:mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
           Ready to stop rewriting ChatGPT prompts? <br className="hidden md:block" />
           Aura AI streamlines your daily workflows automatically.
         </p>

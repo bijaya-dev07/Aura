@@ -83,7 +83,7 @@ export const FeatureCards = () => {
           <div
             key={i}
             ref={(el) => { cardsRef.current[i] = el; }}
-            className={`${feature.color} w-full md:flex-1 min-h-[520px] rounded-[56px] p-10 flex flex-col justify-between border border-black/[0.03] relative group transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)]`}
+            className={`${feature.color} w-full md:flex-1 min-h-[420px] md:min-h-[520px] rounded-[40px] md:rounded-[56px] p-8 md:p-10 flex flex-col justify-between border border-black/[0.03] relative group transition-all duration-700 hover:-translate-y-4 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)]`}
           >
             {/* Unique Ghost Number */}
             <span className="absolute top-8 right-12 text-8xl font-black text-black/[0.03] pointer-events-none select-none group-hover:text-black/[0.05] transition-colors duration-500">
@@ -99,9 +99,9 @@ export const FeatureCards = () => {
             
             <div className="relative z-10 mt-auto">
               {/* Refined Image Container with Glass Blob */}
-              <div className="w-full flex justify-center mb-12 relative group/image">
-                <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-gradient-to-br ${feature.glow} blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
-                <div className="w-44 h-44 flex items-center justify-center relative">
+              <div className="w-full flex justify-center mb-8 relative group/image">
+                <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 md:w-48 md:h-48 bg-gradient-to-br ${feature.glow} blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
+                <div className="w-32 h-32 md:w-44 md:h-44 flex items-center justify-center relative">
                   <Image 
                     src={feature.image} 
                     alt={feature.title} 
